@@ -1,0 +1,25 @@
+{
+  "name": "@stevejunior/tawkto-react",
+  "version": "1.0.0",
+  "description": "Integrate tawk.to into react application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-junior/tawkto-react.git"
+  },
+  "keywords": [
+    "tawk",
+    "tawkto",
+    "tawk.to",
+    "react"
+  ],
+  "author": "Steve Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steve-junior/tawkto-react/issues"
+  },
+  "homepage": "https://github.com/steve-junior/tawkto-react#readme"
+}
