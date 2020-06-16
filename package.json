@@ -1,9 +1,10 @@
 {
   "name": "tawkto-react",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Integrate tawk.to into react application",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": false,
@@ -15,12 +16,28 @@
     "tawk",
     "tawkto",
     "tawk.to",
-    "react"
+    "react",
+    "chat"
   ],
   "author": "Steve Junior",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/steve-junior/tawkto-react/issues"
   },
-  "homepage": "https://github.com/steve-junior/tawkto-react#readme"
+  "homepage": "https://github.com/steve-junior/tawkto-react#readme",
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "dependencies": {
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
