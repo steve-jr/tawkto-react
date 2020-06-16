@@ -1,6 +1,6 @@
 {
   "name": "tawkto-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrate tawk.to into react application",
   "main": "index.js",
   "scripts": {
