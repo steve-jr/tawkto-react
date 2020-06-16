@@ -3,9 +3,8 @@ Integrate tawk.to into react application
 
 import {tawkTo} from 'tawkto-react'
 
-//acquire id by registering with tawk.to
-const propertyId = 'skjdbcjskjdcsdc'
+const tawkToPropertyId = 'skjdbcjskjdcsdc'
 
-tawTo(propertyId)
+tawTo(tawkToPropertyId)
 
-#Function must after the DOM is loaded, such as inside the componentDidMount
+# Function must after the DOM is loaded, such as inside the componentDidMount
