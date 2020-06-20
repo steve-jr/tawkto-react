@@ -4,7 +4,7 @@
 
 
 //pass your tawk propertyId
-export function tawkTo(propertyId){
+module.exports = function tawkTo(propertyId){
 
     if (!window) {
         throw new Error('DOM is unavailable')
