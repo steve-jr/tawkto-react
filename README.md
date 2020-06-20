@@ -15,7 +15,7 @@ npm install tawkto-react --save
 Usage in class component
 
 ```
-import {tawkTo} from 'tawkto-react'
+const tawkTo = require("tawkto-react");
 
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
@@ -27,7 +27,7 @@ componentDidMount(){
 Usage in functional component
 
 ```
-import {tawkTo} from 'tawkto-react'
+const tawkTo = require("tawkto-react");
 
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
