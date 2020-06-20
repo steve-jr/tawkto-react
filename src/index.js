@@ -1,9 +1,9 @@
 // Definitions by: Steve Junior <https://github.com/stevejunior>
 
-"use strict";
+// "use strict";
 
 //pass your tawk propertyId
-module.init = function tawkTo(propertyId){
+module.exports = function tawkTo(propertyId){
 
     if (!window) {
         throw new Error('DOM is unavailable')
