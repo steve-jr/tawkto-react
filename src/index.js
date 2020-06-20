@@ -2,8 +2,9 @@
 
 // "use strict";
 
+
 //pass your tawk propertyId
-module.exports = function tawkTo(propertyId){
+export function tawkTo(propertyId){
 
     if (!window) {
         throw new Error('DOM is unavailable')
