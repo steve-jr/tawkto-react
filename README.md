@@ -4,8 +4,6 @@ A simple script which help integrate tawk.to chat into any react application
 
 ## Getting Started
 
-Script is publicly available at https://www.npmjs.com/package/tawkto-react
-
 ### Installing
 
 Install package by running
