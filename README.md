@@ -20,7 +20,7 @@ const tawkTo = require("tawkto-react");
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
 componentDidMount(){
-    tawTo(tawkToPropertyId)
+    tawkTo(tawkToPropertyId)
 }
 ```
 
@@ -32,7 +32,7 @@ const tawkTo = require("tawkto-react");
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
 useEffect(() => {
-    tawTo(tawkToPropertyId)
+    tawkTo(tawkToPropertyId)
 }, [])
 ```
 
