@@ -4,7 +4,7 @@
 
 
 //pass your tawk propertyId
-module.exports = function tawkTo(propertyId){
+module.exports = function tawkTo(propertyId, key){
 
     if (!window) {
         throw new Error('DOM is unavailable')
@@ -22,7 +22,7 @@ module.exports = function tawkTo(propertyId){
     const script = document.createElement("script");
     script.id    = 'tawkId';
     script.async = true;
-    script.src   = 'https://embed.tawk.to/' + propertyId + '/default';
+    script.src   = 'https://embed.tawk.to/' + propertyId + '/' + key;
     script.charset = 'UTF-8';
     script.setAttribute('crossorigin', '*');
 
@@ -33,3 +33,4 @@ module.exports = function tawkTo(propertyId){
 
     first_script_tag.parentNode.insertBefore(script, first_script_tag)
 }
+
