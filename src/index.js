@@ -20,6 +20,10 @@ module.exports = function tawkTo(propertyId, key){
         return window.Tawk_API;
     }
 
+    if(!key) {
+        throw new Error("Key not provided. Get key from tawk dashboard - Direct Chat Link");
+    }
+
     const script = document.createElement("script");
     script.id    = 'tawkId';
     script.async = true;
