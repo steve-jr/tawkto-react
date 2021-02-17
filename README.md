@@ -19,8 +19,14 @@ import tawkTo from "tawkto-react";
 
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
+// Direct Chat Link
+// https://tawk.to/chat/tawkToPropertyId/tawkToKey
+
+const tawkToKey = 'get_key_from_tawkto_dashboard'
+
+
 componentDidMount(){
-    tawkTo(tawkToPropertyId)
+    tawkTo(tawkToPropertyId, tawkToKey)
 }
 ```
 
@@ -31,8 +37,13 @@ import tawkTo from "tawkto-react";
 
 const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
 
+// Direct Chat Link
+// https://tawk.to/chat/tawkToPropertyId/tawkToKey
+
+const tawkToKey = 'get_key_from_tawkto_dashboard'
+
 useEffect(() => {
-    tawkTo(tawkToPropertyId)
+    tawkTo(tawkToPropertyId, tawkToKey)
 }, [])
 ```
 
