@@ -3,7 +3,8 @@
 // "use strict";
 
 
-//pass your tawk propertyId
+// Pass your tawk propertyId and key
+// Both values can be retrieved from the dashboard
 module.exports = function tawkTo(propertyId, key){
 
     if (!window) {

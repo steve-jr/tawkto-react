@@ -1,6 +1,6 @@
 {
   "name": "tawkto-react",
-  "version": "1.0.10",
+  "version": "2.0.0",
   "description": "Integrate tawk.to into react application",
   "main": "src/index.js",
   "scripts": {
@@ -29,9 +29,10 @@
     "react": "^16.13.1"
   },
   "dependencies": {
-    "webpack": "^4.43.0"
+    
   },
   "devDependencies": {
+    "webpack" : "^4.43.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
