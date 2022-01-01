@@ -1,53 +1,54 @@
 # tawkto-react
 
-A simple script which help integrate tawk.to chat into any react application
+A simple wrapper around tawk.to JS API to help integrate chat into any application that is based on the react framework
 
-## Getting Started
+## Installation
 
-### Installing
-
-Install package by running
-
-```
+```sh
 npm install tawkto-react --save
 ```
 
-Usage in class component
+## Usage
 
-```
-import tawkTo from "tawkto-react";
+This package is simple react wrapper around the tawk.to JS API. Explore the [Tawk JS API](https://developer.tawk.to/jsapi/) as you wish.
 
-const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
+Please consider migrating to the latest version and fetch the `propertyId` and  `tawkId` from your account
 
-// Direct Chat Link
-// https://tawk.to/chat/tawkToPropertyId/tawkToKey
-
-const tawkToKey = 'get_key_from_tawkto_dashboard'
+![Screenshot](demo.png)
 
 
-componentDidMount(){
-    tawkTo(tawkToPropertyId, tawkToKey)
+## class component
+
+```javascript
+import TawkTo from 'tawkto-react'
+
+componentDidMount()
+{
+    var tawk = new TawkTo(propertyId, tawkId)
+
+    tawk.hideWidget()
 }
 ```
 
-Usage in functional component
+## functional component
 
-```
-import tawkTo from "tawkto-react";
-
-const tawkToPropertyId = 'get_property_id_from_tawkto_dashboard'
-
-// Direct Chat Link
-// https://tawk.to/chat/tawkToPropertyId/tawkToKey
-
-const tawkToKey = 'get_key_from_tawkto_dashboard'
+```javascript
+import TawkTo from 'tawkto-react'
 
 useEffect(() => {
-    tawkTo(tawkToPropertyId, tawkToKey)
+    
+    var tawk = new TawkTo(propertyId, tawkId)
+
+    tawk.onStatusChange((status) => 
+    {
+        // console.log(status)
+    })
+
 }, [])
 ```
 
-Function must be called after the DOM is loaded, such as inside componentDidMount or useEffect.
+## License
+[MIT](LICENSE)
 
 ## Authors
 
