@@ -12,10 +12,10 @@
  */
 class TawkTo {
   constructor(propertyId, widgetId, zIndex = null) {
-    this._Tawk = this.#init(propertyId, widgetId, zIndex);
+    this._Tawk = this.init(propertyId, widgetId, zIndex);
   }
 
-  #init(propertyId, widgetId, zIndex) {
+  init(propertyId, widgetId, zIndex) {
     if (!window) {
       throw new Error("Unvailable DOM");
     }
