@@ -1,6 +1,6 @@
 {
   "name": "tawkto-react",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Integrate tawk.to into react application",
   "main": "src/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/steve-junior/tawkto-react#readme",
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "17.x || 18.x"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
