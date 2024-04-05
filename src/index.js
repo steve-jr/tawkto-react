@@ -8,14 +8,18 @@
  * are available in TawkTo dashboard
  *
  * @param string zIndex
- * Add style to the widget. Only zIndex is currently supported
+ * Only zIndex is currently supported
+ * Add style to the widget.
+ * 
+ * @param object visitor
+ * is an optional object contains email, name & optionally a hash value
  */
 class TawkTo {
-  constructor(propertyId, widgetId, zIndex = null) {
-    this._Tawk = this.init(propertyId, widgetId, zIndex);
+  constructor(propertyId, widgetId, zIndex = null, visitor = null) {
+    this._Tawk = this.init(propertyId, widgetId, zIndex, visitor);
   }
 
-  init(propertyId, widgetId, zIndex) {
+  init(propertyId, widgetId, zIndex, visitor) {
     if (!window) {
       throw new Error("Unvailable DOM");
     }
@@ -39,6 +43,9 @@ class TawkTo {
     }
 
     window.Tawk_API = window.Tawk_API || {};
+    if (visitor && typeof visitor === "object") {
+      window.Tawk_API.visitor = visitor;
+    }
     window.Tawk_LoadStart = new Date();
 
     var tawk = window.Tawk_API;
