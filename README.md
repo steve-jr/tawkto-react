@@ -52,6 +52,6 @@ useEffect(() => {
 
 ## Authors
 
-* **Steve Junior**
+* **Stephen Ibeh**
 
 
